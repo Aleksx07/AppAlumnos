@@ -2,71 +2,88 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bienvenida"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout_bienvenida"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="198dp"
         android:layout_height="62dp"
+        android:layout_marginTop="36dp"
         android:text=""
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="serif"
-        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo1"
-        app:layout_constraintVertical_bias="0.436"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnSaludar"
         android:layout_width="344dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/btn_Saludar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombre"
+        app:layout_constraintVertical_bias="0.103"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtNombre"
         android:layout_width="217dp"
         android:layout_height="84dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginTop="25dp"
         android:autofillHints="name"
         android:ems="10"
         android:hint="@string/edt_hint_nombre"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/btnSaludar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/imgSaludo"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txtTitulo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
         android:text="@string/lbl_titulo"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="serif"
-        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/img_content_descrip"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        app:srcCompat="@drawable/baseline_back_hand_24"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaludar"
+        app:srcCompat="@drawable/alumno" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

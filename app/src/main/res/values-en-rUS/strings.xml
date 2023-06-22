@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppAlumnos</string>
+    <string name="lbl_titulo">Mobile Programming 1</string>
+    <string name="btn_Saludar">Greet</string>
+    <string name="edt_hint_nombre">enter your name</string>
+    <string name="mansaje_error_nombre">Please enter the name to display</string>
+    <string name="mensaje_bienvenida">Welcome, %1$s!</string>
+    <string name="img_content_descrip">a waving hand</string>
+</resources>

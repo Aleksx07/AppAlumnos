@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">AppAlumnos</string>
+    <string name="app_name">App Alumnos</string>
     <string name="lbl_titulo">Programción Movil 1</string>
     <string name="btn_Saludar">Saludar</string>
-    <string name="lbl_Name">Name</string>
     <string name="edt_hint_nombre">Ingresa tu nombre</string>
     <string name="mansaje_error_nombre">Favor ingresa el nombre a mostrar</string>
     <string name="mensaje_bienvenida">Bienvenido, %1$s!</string>
+    <string name="img_content_descrip">Una mano saludando</string>
 
 </resources>
